@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilebook</title>
+    <link rel="stylesheet" href="social.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Profilebook</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#photos">Photos</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#content">Content</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="profile" class="profile">
+            <h2>Welcome, [User Name]</h2>
+            <button id="addPhotoBtn">Add New Photo</button>
+        </section>
+
+        <section id="photos" class="photo-gallery-section">
+            <h2>Photo Gallery</h2>
+            <div id="photoGallery" class="photo-gallery">
+                <!-- Photos will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="news" class="news-section">
+            <h2>Latest News</h2>
+            <ul id="newsList" class="news-list">
+               <p>
+                Members of different organisations take out a protest rally in solidarity with agitating ,
+                doctors and other medical professionals over the alleged rape and murder of a PGT woman doctor 
+                at RG Kar Medical College and Hospital in Kolkata on August 13, 2024. (Samir Jana/ Hindustan Times)
+               </p>
+            </ul>
+        </section>
+
+        <section id="content" class="content-section">
+            <h2>Content</h2>
+            <p>Here you can find various content related to your interests.</p>
+            <p>One day a mom noticed that when her son was logging onto a favorite website he typed a very long password
+                . She asked him what it was, and he replied, “MickeyMinnieGoofyPluto.” She asked him why he would use such 
+                a password. “Because,” he explained, “it says your password has to have at least four characters.</p>
+        </section>
+    </main>
+
+    <!-- Modal for Adding Photo -->
+    <div id="photoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Add New Photo</h2>
+            <form id="photoForm">
+                <input type="file" id="photoInput" accept="image/*" required>
+                <button type="submit" class="btn">Upload Photo</button>
+            </form>
+        </div>
+
+        <div class="copyright">
+              <h1>&copy 2024 Ujjwal .All Right Reservd</h1>
+        </div>
+    </div>
+
+    <script src="social.js"></script>
+</body>
+</html>
